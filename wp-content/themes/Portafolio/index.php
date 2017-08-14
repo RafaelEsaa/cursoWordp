@@ -10,5 +10,3 @@
         <li><?php bloginfo(stylesheet_directory)?></li>
     </ul>
     <?php get_footer(); ?>
-</body>
-</html>
