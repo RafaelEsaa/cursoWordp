@@ -4,18 +4,6 @@
     la categoria luego del parentesis*/
 ?>
 <?php get_header(); ?>
-<body>
-<!-- Funciones usadas en proyecto
-<div class="row">
-    <ul>
-        <li><b>Descripcion: </b><?php bloginfo(descripcion)?></li>
-        <li><?php bloginfo(url)?></li>
-        <li><?php bloginfo(language)?></li>
-        <li><?php bloginfo(stylesheet_url)?></li>
-        <li><?php bloginfo(stylesheet_directory)?></li>
-    </ul>
-</div>
--->
     <div class="container">
         <div class="row">
             <div class="col-md-12">

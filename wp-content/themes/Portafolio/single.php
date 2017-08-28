@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<body>
 <h1><?php get_sidebar();?></h1>
 <!-- Funciones usadas en proyecto
 <div class="row">
@@ -16,6 +15,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1><?php bloginfo(name)?></h1>
+                <h1>Single Page</h1>
             </div>
             <div class="col-md-12">
                 Ultimos trabajos
@@ -25,7 +25,7 @@
                         while (have_posts()) :
                             the_post();
                 ?>
-                    <div class="col-md-4">
+                    <div class="col-md-12">
                         <h2><?php the_title();?></h2>
                         <p><?php the_content(); ?></p>
                         <p><?php the_tags(); ?></p>

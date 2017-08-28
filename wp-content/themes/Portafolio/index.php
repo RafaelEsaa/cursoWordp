@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<body>
 <h1><?php get_sidebar();?></h1>
 <!-- Funciones usadas en proyecto
 <div class="row">
@@ -29,9 +28,20 @@
                 ?>
                     <div class="col-md-4">
                         <h2><?php the_title();?></h2>
+                        <?php 
+                            if(has_post_thumbnail()){
+                                ?>
+                                <img src="<?php the_post_thumbnail_url('full');?>" alt="">
+                            <?php
+                            /*the_post_thumbnail('medium');
+                            the_post_thumbnail('large');
+                            the_post_thumbnail('full');*/
+                            }
+                        ?>
                         <p><?php the_excerpt(); ?></p>
                         <p><?php the_tags(); ?></p>
                         <p><?php the_author(); ?></p>
+                        <p><?php the_author_posts_link(); ?></p>
                         <a href="<?php the_permalink(); ?>">Leer mas</a>
                     </div>
                 <?php

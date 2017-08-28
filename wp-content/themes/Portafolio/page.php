@@ -1,19 +1,13 @@
 <?php get_header(); ?>
-<!-- Funciones usadas en proyecto
-<div class="row">
-    <ul>
-        <li><b>Descripcion: </b><?php bloginfo(descripcion)?></li>
-        <li><?php bloginfo(url)?></li>
-        <li><?php bloginfo(language)?></li>
-        <li><?php bloginfo(stylesheet_url)?></li>
-        <li><?php bloginfo(stylesheet_directory)?></li>
-    </ul>
-</div>
--->
+<h1>Pagina Común</h1>
+<h2></h2>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Categoria: <?php single_cat_title();?></h1>
+                <h1><?php bloginfo(name)?></h1>
+            </div>
+            <div class="col-md-12">
+                Ultimos trabajos
             </div>
                 <?php
                     if(have_posts()) :
@@ -22,10 +16,7 @@
                 ?>
                     <div class="col-md-4">
                         <h2><?php the_title();?></h2>
-                        <p><?php the_excerpt(); ?></p>
-                        <p><?php the_tags(); ?></p>
-                        <p><?php the_author(); ?></p>
-                        <a href="<?php the_permalink(); ?>">Leer mas</a>
+                        <p><?php the_content(); ?></p>
                     </div>
                 <?php
                         endwhile;
